@@ -12,8 +12,8 @@ public class ProgramWhiter {
 		
 		String path = "c:\\temp\\out.txt";
 		
-		 try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))) { // Esta linha não recria o arquivo
-		//try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))) {
+		// try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))) { // Esta linha não recria o arquivo (o true)
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))) {
 			for (String line : lines ) {
 				bw.write(line);
 				bw.newLine(); // Inclui uma quebra de linha
