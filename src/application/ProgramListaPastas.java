@@ -32,7 +32,7 @@ public class ProgramListaPastas {
 
 		// Cria uma pasta com o nome especificado
 		boolean sucess = new File(strPath + "\\subdir").mkdir();
-		System.out.println("Pasta criada com sucesso" + sucess);
+		System.out.println("Pasta criada com sucesso? : " + sucess);
 		sc.close();
 		
 	}
